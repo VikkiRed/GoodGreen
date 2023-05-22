@@ -889,8 +889,20 @@ button:hover {
     background-size: cover;
     background-position: bottom center;
   }
+  
+  .footer__social__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .footer__contacts {
-    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__contacts__info {
+    display: flex;
+    justify-content: center;
   }
   .footer__nav__container {
     display: flex;
@@ -1219,6 +1231,39 @@ button:hover {
         .yellowSticker {
             padding: 1%;      
         }   
+
+/*---FOOTER MOBILE---*/
+
+       .footer__container {
+            flex-direction: column;
+            align-items: center;
+            padding: 5%;
+            width: 100%;
+       }
+      
+       .footer__container__icon {
+            display: none;
+       } 
+       .footer__contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5%;
+       }
+       .footer__contacts__icons {
+            margin: 5% 0;
+       }
+       .footer__nav__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+       }
+       .footer__nav__title {
+             margin: 5% 0;
+       }
+       .footer__nav__link {
+            margin-bottom: 3%;
+       }
 }
 /*--------------------------
 ------------TABLET----------
@@ -1231,11 +1276,11 @@ button:hover {
             right: 2%;
         }
 /*---ABOUT TABLET---*/
-.about__container {
-    background-image: url("img/55b4bee95fad001fcac24d1643ac595b\ 5.png");
-    background-repeat: no-repeat;
-    background-position: top left;
-}        
+        .about__container {
+            background-image: url("img/55b4bee95fad001fcac24d1643ac595b\ 5.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+        }        
 /*----FOR-WHOM BLOCK TABLET---*/
         .forWhom__container {
             background-image: none;
@@ -1279,6 +1324,32 @@ button:hover {
         .norms__container__icon {
             margin-right: 5%;
         }
+             
+/*---FOOTER Tablet---*/
+.footer__container {
+    padding: 1%;
+    justify-content: space-evenly;
+}
+.footer__container__icon {
+    position: relative;
+    top:0;
+    left:0;
+}        
+.footer__container__icon > img {
+    position: relative;
+    top: -15%;
+    left: 0;
+}
+.footer__social__block {
+    width: 40%;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer__nav__container {
+    width: 30%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
     }
 
 
@@ -1301,4 +1372,29 @@ button:hover {
             margin: 1%;
         }
         
+/*---FOOTER DESK---*/
+        .footer__container {
+            padding: 1%;
+            justify-content: space-evenly;
+        }
+        .footer__container__icon {
+            position: relative;
+            top:0;
+            left:0;
+        }        
+        .footer__container__icon > img {
+            position: relative;
+            top: -15%;
+            left: 0;
+        }
+        .footer__social__block {
+            width: 40%;
+            align-items: flex-start;
+            justify-content: center;
+       }
+       .footer__nav__container {
+            width: 30%;
+            align-items: flex-start;
+            justify-content: space-evenly;
+       }
     }
